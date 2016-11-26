@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace Kalkulator
 {
@@ -324,7 +325,7 @@ namespace Kalkulator
         {
             if (bOn)
             {
-                System.Media.SoundPlayer buttonSound = new System.Media.SoundPlayer(@".\Sounds\boop.wav");
+                SoundPlayer buttonSound = new SoundPlayer(Properties.Resources.boop);
                 buttonSound.Play();
             }
             else
@@ -337,7 +338,7 @@ namespace Kalkulator
         {
             if (bOn)
             {
-                System.Media.SoundPlayer buttonSound = new System.Media.SoundPlayer(@".\Sounds\DUMDUMDUUUUUM.wav");
+                SoundPlayer buttonSound = new SoundPlayer(Properties.Resources.DUMDUMDUUUUUM);
                 buttonSound.Play();
             }
             else
